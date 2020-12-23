@@ -20,14 +20,13 @@ body {
     url("./images/bg-intro-mobile.png");
   /* background-image: url("./images/bg-intro-mobile.png"); */
   color: white;
+  text-align: center;
 }
 
 h1 {
   font-weight: 600;
-  text-align: center;
 }
 h3 {
-  text-align: center;
   font-weight: 400;
   font-size: 15px;
 }
@@ -57,13 +56,14 @@ section {
 form {
   display: flex;
   flex-direction: column;
-  border-radius: 2%;
+  border-radius: 7px;
   background: white;
   margin-top: 1em;
   box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.17);
 }
 
 form input {
+  font-weight: 700;
   color: hsl(249, 10%, 26%);
   margin: 4% auto 0 auto;
   padding: 1.5em;
@@ -82,7 +82,6 @@ form button {
 p {
   width: 70%;
   margin: 0 auto 2.5em auto;
-  text-align: center;
   font-size: 10px;
   color: hsl(246, 25%, 77%);
 }
@@ -95,6 +94,10 @@ p > a {
 footer {
   margin-top: 2em;
 }
+form input:focus {
+  outline: none;
+  box-shadow: 0 0 3px 0px #1f57dd;
+}
 
 ::placeholder {
   font-weight: 700;
@@ -103,8 +106,49 @@ footer {
 .attribution {
   color: white;
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  body {
+    background: hsl(0, 100%, 74%) url("./images/bg-intro-mobile.png");
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  section div {
+    flex-basis: 40%;
+  }
+
+  #content-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  h3 {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  button {
+    padding: 1em;
+    margin: 1em auto 0em auto;
+  }
+
+  form button {
+    margin-bottom: 0.5em;
+  }
 }
