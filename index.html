@@ -44,6 +44,7 @@
             id="first-name"
             placeholder="First Name (required)"
             title="only alphabets are accepted"
+            pattern="^[A-Za-z]+$"
             required
           />
           <label for="first-name">Hello</label>
@@ -54,6 +55,7 @@
             required
             placeholder="Last Name (required)"
             title="only alphabets are accepted"
+            pattern="^[A-Za-z]+$"
             required
           />
           <label for="last-name">Hello</label>
@@ -62,7 +64,8 @@
             name=""
             id="email"
             placeholder="Email Address (required)"
-            title="a valid email address is accepted"
+            title="a valid email address is accepted - user@example.com"
+            pattern="^\S+@\S+$"
             required
           />
           <label for="email">Hello</label>
@@ -90,7 +93,10 @@
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor.</a
         >
-        Coded by <a href="#" target="_blank">Paritosh.</a>
+        Coded by
+        <a href="https://github.com/Paritosh7/FEMentor-login" target="_blank"
+          >Paritosh.</a
+        >
       </p>
     </footer>
   </body>
