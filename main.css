@@ -90,8 +90,8 @@ form label {
   color: red;
 }
 .active_invalid-input-border {
+  outline: none;
   box-shadow: 0 0 0 1px red;
-  border: none;
 }
 
 form button {
