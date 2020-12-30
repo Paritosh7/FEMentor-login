@@ -90,8 +90,9 @@ form label {
   color: red;
 }
 .active_invalid-input-border {
-  outline: none;
   box-shadow: 0 0 0 1px red;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 0 1px red;
 }
 
 form button {
@@ -119,7 +120,10 @@ footer {
 
 form input:focus {
   outline: none;
+  -webkit-appearance: none;
   box-shadow: 0 0 0 1px hsl(248, 32%, 49%);
+  /** for IOS */
+  -webkit-box-shadow: 0 0 0 1px hsl(248, 32%, 49%);
 }
 
 ::placeholder {
